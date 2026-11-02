@@ -1,49 +1,5 @@
-CREATE TABLE uredaj (
-	id_uredaj INT PRIMARY KEY AUTO_INCREMENT,
-    naziv VARCHAR(100) NOT NULL,
-    tip VARCHAR(50),
-    lokacija VARCHAR(100)
-);
-
-
-CREATE TABLE prijava_kvara (
-	id_prijave INT PRIMARY KEY AUTO_INCREMENT,
-    id_uredaja INT NOT NULL,
-    datum_prijave DATE NOT NULL,
-    opis VARCHAR(255)
-    
-    FOREIGN KEY (id_uredaja)REFERENCES uredaj(id_uredaja)
-);
-
-
-
-CREATE TABLE djelatnik (
-	id_djelatnik INT PRIMARY KEY AUTO_INCREMENT,
-    ime VARCHAR(25),
-    prezime VARCHAR(25),
-    radno_mjesto VARCHAR(50),
-    telefon INT(12) NOT NULL
-);
-CREATE TABLE intervencija (
-	id_intervencije INT PRIMARY KEY AUTO_INCREMENT,
-    id_prijave INT NOT NULL,
-    id_djelatnika INT NOT NULL,
-    datum_intervencije DATE NOT NULL,
-    trajanje INT NOT NULL,
-    ishod VARCHAR(50),
-    
-    FOREIGN KEY (id_prijave)REFERENCES prijava_kvara(id_prijave),
-    FOREIGN KEY (id_djelatnika)REFERENCES djelatnik(id_djelatnik)
-);
-
-
-
-FOREIGN KEY (id_djelatnika)REFERENCES djelatnik(id_djelatnik)
-
-
-
-INSERT INTO uredaj(id_uredaj, naziv, tip, lokacija) VALUES
-(1, samsung, s25, vukovarska 45),
-(2, iphone, i15, dubrovaćka 46),
-(3, huwawey, a56, laginjina 5),
-(4, printer, samsung, roosveltova 7)
+di si lovre kuco stara 
+babo je btw
+shoe bill aura
+gleaj ovo 
+upisi ovaj link u gugl https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBhqTTurK4mV7D1ffha7pXIm7Fv1T_HEdpToKSUsyAxxUgoAqa2wEJJI8&s=10
