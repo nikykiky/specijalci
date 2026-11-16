@@ -103,7 +103,7 @@ function analizirajTemperature($temperature) {
    }
    $prosjek = $zbroj / $brojDana;
    echo "Najviša temperatura: $max °C\n<br>";
-   echo "Najniža temperatura: $min °C\n<br>";
+   echo "Najniža : $min °C\n<br>";
    echo "Broj dana iznad 15 °C: $daniIznad15\n<br>";
    echo "Prosječna temperatura (BONUS): " . round($prosjek, 2) . " °C\n<br>";
 }
