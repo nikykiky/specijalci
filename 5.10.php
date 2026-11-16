@@ -71,7 +71,7 @@ function brojNeprolaznih($bodovi) {
 echo "<h3>Zadatak 5</h3>";
 $bodovi = [45, 78, 32, 91, 50, 67, 28, 84];
 echo "Broj prolaznih (50+): " . brojProlaznih($bodovi) . "\n<br>";
-echo "Broj neprolaznih: " . brojNeprolaznih($bodovi) . "\n<br>";
+echo "Broj: " . brojNeprolaznih($bodovi) . "\n<br>";
 echo "<hr>";
 
 // ==========================================
@@ -102,7 +102,7 @@ function analizirajTemperature($temperature) {
        $brojDana++;
    }
    $prosjek = $zbroj / $brojDana;
-   echo "Najviša temperatura: $max °C\n<br>";
+   echo "Najviša : $max °C\n<br>";
    echo "Najniža : $min °C\n<br>";
    echo "Broj dana iznad 15 °C: $daniIznad15\n<br>";
    echo "Prosječna temperatura (BONUS): " . round($prosjek, 2) . " °C\n<br>";
