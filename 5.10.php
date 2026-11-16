@@ -14,34 +14,6 @@ pretvoriVrijeme(75);
 pretvoriVrijeme(120);
 pretvoriVrijeme(245);
 echo "<hr>";
-
-// ==========================================
-// ZADATAK 2: Cijena ulaznice
-// Funkcija vraća cijenu ulaznice na temelju godina (mlađi od 7: 0€, 7-17: 5€, 18-64: 10€, 65+: 6€)[span_3](start_span)[span_3](end_span).
-// ==========================================
-function cijenaUlaznice($godine) {
-   if ($godine < 7) {
-       return 0;
-   } elseif ($godine >= 7 && $godine <= 17) {
-       return 5;
-   } elseif ($godine >= 18 && $godine <= 64) {
-       return 10;
-   } else {
-       return 6;
-   }
-}
-echo "<h3>Zadatak 2</h3>";
-// Testiranje funkcije s četiri različite dobi[span_4](start_span)[span_4](end_span).
-$testGodine = [5, 16, 30, 70];
-foreach ($testGodine as $godine) {
-   echo "Za dob od $godine godina, cijena ulaznice je " . cijenaUlaznice($godine) . " €.\n<br>";
-}
-echo "<hr>";
-
-// ==========================================
-// ZADATAK 3: Izračun popusta
-// Funkcija prima početnu cijenu i popust te vraća novu cijenu, ili početnu ako je popust manji od 0 ili veći od 100[span_5](start_span)[span_5](end_span).
-// ==========================================
 function konacnaCijena($cijena, $popust) {
    if ($popust < 0 || $popust > 100) {
        return $cijena;
