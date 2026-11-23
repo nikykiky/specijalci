@@ -3,7 +3,11 @@
 // ZADATAK 1: Pretvaranje minuta u sate i minute
 // Funkcija prima ukupan broj minuta i ispisuje sate i minute pomoću dijeljenja i operatora %[span_1](start_span)[span_1](end_span).
 // ==========================================
+<<<<<<< HEAD
 function pretvoriVrijeme($minuteNIKOLINA) {
+=======
+function pretvo     kmeta kreten    riVrijeme($minute) {
+>>>>>>> cb37572c2c3e94e12dfa9132f76dbb9a7d7bd3e0
    $sati = floor($minute / 60);
    $preostaleMinute = $minute % 60;
    echo "$minute minuta je $sati sata i $preostaleMinute minuta.\n<br>";
