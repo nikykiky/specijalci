@@ -26,22 +26,18 @@ echo "Nova cijena (početna 80€, neispravan popust 150%): " . konacnaCijena(80
 echo "<hr>";
 
 // ==========================================
-// ZADATAK 4: Brojanje slova u riječi
+// ZADATAK 4: Brojanje slova u riječisadsadasdaddasdsadasdasdadasd
 // Funkcija vraća koliko se puta zadano slovo pojavljuje u riječi koristeći for petlju i strlen() bez gotovih funkcija za brojanje[span_6](start_span)[span_6](end_span).
 // ==========================================
-function prebrojiSlovo($rijec, $slovo) {
+function prebrojiSlovo($rijec, $slovo) 
    $brojac = 0;
    $duljina = strlen($rijec);
    for ($i = 0; $i < $duljina; $i++) {
-       // Pretvaramo u mala slova kako bi pretraga bila neosjetljiva na velika/mala slova
-       if (strtolower($rijec[$i]) == strtolower($slovo)) {
-           $brojac++;
-       }
-   }
+       
    return $brojac;
 }
 echo "<h3>Zadatak 4</h3>";
-$broj = prebrojiSlovo("programiranje", "r");
+$broj = prebrojiSlovo("progdasadsdasdasdasdeefrfrramiranje", "r");
 echo "Slovo 'r' se u riječi 'programiranje' pojavljuje $broj puta.\n<br>";
 echo "<hr>";
 
