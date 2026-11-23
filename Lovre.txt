@@ -8,3 +8,12 @@ lovre bura bok ja sam filip NE lovre bura
 ovo NIJE lovre ovo JE babo
 
 lovre sinko MRZIN te
+<<<<<<< HEAD
+=======
+
+
+lovre aura aura
+
+
+aaaaaaa
+>>>>>>> 297369fcc09eab587805d7b89ef2d39ad6c2629f
